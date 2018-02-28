@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/settings_profile_data_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/settings_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="center_horizontal"
+        android:text="Display Name"
+        android:textColor="@color/dark_blue"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/settings_display_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/latoregular"
+        android:text="Hey now brown cow"
+        android:maxWidth="250dp"
+        android:maxLines="3"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp" />
+
+</LinearLayout>

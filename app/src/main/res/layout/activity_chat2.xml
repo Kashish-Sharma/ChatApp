@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE5DD"
+    tools:context="com.app.android.jiitchat.Activities.ChatActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/chat_app_bar"/>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/messageSwipeLayout"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/chat_app_bar"
+        android:layout_alignParentStart="true"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messages_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/linearLayout"
+            android:layout_below="@+id/chat_app_bar">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:weightSum="10"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="9"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_marginStart="20dp"
+            android:id="@+id/messageEditText"
+            android:padding="10dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:elevation="5dp"
+            android:paddingStart="50dp"
+            android:layout_gravity="center_vertical"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:hint="Type a message"
+            android:maxHeight="140dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittextrounded1"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/photoPickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/messageEditText"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="11dp"
+            android:background="#FFF"
+            android:elevation="5dp"
+            android:src="@drawable/ic_mail_outline_black_24dp" />
+
+    </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_marginEnd="20dp"
+            android:layout_width="50dp"
+            android:elevation="5dp"
+            android:layout_weight="1"
+            android:paddingStart="20dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:background="@drawable/sendbuttonfinal"
+            android:src="@drawable/ic_send_black_24dp"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

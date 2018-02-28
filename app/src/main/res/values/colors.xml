@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#4F86B8</color>-->
+    <!--<color name="colorPrimaryDark">#125988</color>-->
+    <!--<color name="colorAccent">#40C4FF</color>-->
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#007ac1</color>
+    <color name="colorAccent">#FFD740</color>
+
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+
+    <color name="detail_accent_pane_background">#455A64</color>
+    <color name="detail_accent_label">#90A4AE</color>
+
+    <color name="pink">#EC407A</color>
+    <color name="dark_blue">#23283a</color>
+    <color name="colorTextDisable">#66FFFFFF</color>
+    <color name="red">#ff1744</color>
+    <color name="green">#00c853</color>
+    <color name="blue">#1875d1</color>
+    <color name="color_chat_background">#E3F2FD</color>
+    <color name="online_green">#64dd17</color>
+    <color name="offline_red">#e64a19</color>
+    <color name="edittextcolor">#80deea</color>
+    <color name="profilePrimaryDark">#292b3d</color>
+    <color name="graylight">#fafafa</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+</resources>

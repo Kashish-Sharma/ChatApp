@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.android.jiitchat.Activities.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_bg_anim"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to"
+            android:textColor="#ffff"
+            android:fontFamily="@font/robotobold"
+            android:textSize="40sp" />
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MyApp"
+            android:textColor="#ffff"
+            android:fontFamily="@font/robotobold"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/don_t_have_an_account"
+            android:textColor="#ffff"
+            android:textSize="25sp" />
+
+
+
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:background="@drawable/button_style_pink"-->
+        <!--android:text="@string/learn_more_button"-->
+        <!--android:textColor="#ffff" />-->
+
+        <Button
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/startRegisterButton"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/latobold"
+            android:background="@drawable/buttonstyle"
+            android:singleLine="true"
+            android:text="@string/join_the_network"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittextrounded"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:hint="E-MAIL"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextrounded"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:hint="PASSWORD"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/loginID"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/latobold"
+            android:background="@drawable/button_style_pink"
+            android:drawableRight="@drawable/ic_send_black_24dp"
+            android:text="Login"
+            android:textColor="#ffff" />
+
+    </LinearLayout>
+    </LinearLayout>

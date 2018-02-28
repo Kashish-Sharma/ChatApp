@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.android.jiitchat.Activities.RegisterActivity">
+
+    <include
+        android:id="@+id/registerPageToolbar"
+        layout="@layout/app_bar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/register_display_name"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:paddingTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/display_name"
+            android:inputType="textPersonName"
+            android:textColorHint="#80808080"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="64dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/register_email"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_display_name">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#80808080"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="210dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/register_password"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_email">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:ellipsize="start"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="#80808080"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="292dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:background="@drawable/button_style_pink"
+        android:id="@+id/register_create_account_button"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_password"
+        android:layout_marginEnd="116dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/create_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_password" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="20dp"
+        android:text="Create a New Account"
+        android:textColor="#000"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerPageToolbar" />
+</android.support.constraint.ConstraintLayout>
