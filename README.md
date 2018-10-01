@@ -12,7 +12,7 @@ Description
 
 TO-DO
 ---------
-* Use cloud functions to notufy users on receiving friend requests.
+* Use cloud functions to notify users on receiving friend requests.
 * Code clean up
 
 External libraries used
