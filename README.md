@@ -12,8 +12,9 @@ Description
 
 TO-DO
 ---------
-* Use cloud functions to notify users on receiving friend requests.
-* Code clean up
+* ~~Use cloud functions to notify users on receiving friend requests.~~
+* ~~Code clean up~~<br>
+An updated version of the app can be found [here](https://github.com/Kashish-Sharma/TheNetwork-open)
 
 External libraries used
 ----------
